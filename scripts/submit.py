@@ -50,4 +50,29 @@ if build_num:
         print('Build not ready after 15 min')
         sys.exit(0)
 
-print('Done')
+if state != 'PREPARE_FOR_SUBMISSION':
+    print(f'State is {state}; not submitting')
+    sys.exit(0)
+
+r = api('GET', f'/apps/{APP_ID}/reviewSubmissions?filter[platform]=IOS&filter[state]=READY_FOR_REVIEW&limit=1')
+subs = r.json().get('data', [])
+if subs:
+    sub_id = subs[0]['id']
+    print('Reusing reviewSubmission', sub_id)
+else:
+    r = api('POST', '/reviewSubmissions', {'data': {'type': 'reviewSubmissions',
+        'attributes': {'platform': 'IOS'},
+        'relationships': {'app': {'data': {'type': 'apps', 'id': APP_ID}}}}})
+    if r.status_code >= 300:
+        print('Create reviewSubmission failed', r.status_code, r.text[:300]); sys.exit(1)
+    sub_id = r.json()['data']['id']
+    print('Created reviewSubmission', sub_id)
+
+r = api('POST', '/reviewSubmissionItems', {'data': {'type': 'reviewSubmissionItems',
+    'relationships': {'reviewSubmission': {'data': {'type': 'reviewSubmissions', 'id': sub_id}},
+                      'appStoreVersion': {'data': {'type': 'appStoreVersions', 'id': VERSION_ID}}}}})
+print('Add item', r.status_code, '' if r.status_code < 300 else r.text[:200])
+
+r = api('PATCH', f'/reviewSubmissions/{sub_id}', {'data': {'type': 'reviewSubmissions', 'id': sub_id,
+    'attributes': {'submitted': True}}})
+print('Submit for review', r.status_code, '' if r.status_code < 300 else r.text[:300])

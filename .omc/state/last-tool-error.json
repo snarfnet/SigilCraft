@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd /c/Users/Windows/Occulta && gh run view 30196530766 --json status,conclusion 2>/dev/null | python -c \\\"import json,sys; d=json.load(sys.stdin); print('Occulta:', d['status'], d.get('con...",
+  "error": "Exit code 1\nOcculta: in_progress \r\nTraceback (most recent call last):\r\n  File \"<string>\", line 1, in <module>\r\n  File \"C:\\Users\\Windows\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\json\\__init__.py\", line 293, in load\r\n    return loads(fp.read(),\r\n           ^^^^^^^^^^^^^^^^\r\n  File \"C:\\Users\\Windows\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\json\\__init__.py\", line 346, in loads\r\n    return _default_decoder.decode(s)\r\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Users\\Windows\\AppData\\Local...",
+  "timestamp": "2026-07-26T09:36:50.449Z",
+  "retry_count": 1
+}
