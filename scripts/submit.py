@@ -32,13 +32,13 @@ if state == 'READY_FOR_SALE':
 
 build_num = sys.argv[1] if len(sys.argv) > 1 else None
 if build_num:
-    print(f'Waiting for build {build_num}...')
+    print('Waiting for latest VALID build...')
     for i in range(30):
-        r = api('GET', f'/builds?filter[app]={APP_ID}&filter[version]={build_num}&filter[processingState]=VALID')
+        r = api('GET', f'/builds?filter[app]={APP_ID}&filter[processingState]=VALID&sort=-uploadedDate&limit=1')
         builds = r.json().get('data', [])
         if builds:
             build_id = builds[0]['id']
-            print(f'Build ready: {build_id}')
+            print(f'Build ready: {build_id} version={builds[0]["attributes"].get("version")}')
             r2 = api('PATCH', f'/appStoreVersions/{VERSION_ID}', {
                 'data': {'type': 'appStoreVersions', 'id': VERSION_ID,
                          'relationships': {'build': {'data': {'type': 'builds', 'id': build_id}}}}
