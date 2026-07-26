@@ -1,0 +1,23 @@
+name: SigilCraft
+options:
+  bundleIdPrefix: com.tokyonasu
+  deploymentTarget:
+    iOS: "17.0"
+settings:
+  base:
+    SWIFT_VERSION: 5.9
+    TARGETED_DEVICE_FAMILY: "1,2"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: 1
+    PRODUCT_BUNDLE_IDENTIFIER: com.tokyonasu.SigilCraft
+    DEVELOPMENT_TEAM: 83VGKGSQUH
+    CODE_SIGN_STYLE: Automatic
+targets:
+  SigilCraft:
+    type: application
+    platform: iOS
+    sources: [SigilCraft]
+    settings:
+      base:
+        INFOPLIST_FILE: SigilCraft/Info.plist
+        PRODUCT_NAME: SigilCraft

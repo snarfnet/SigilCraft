@@ -1,0 +1,88 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10001 /* SigilCraftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10001; };
+		A10002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10002; };
+		A10003 /* ArcaneTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10003; };
+		A10004 /* SigilModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10004; };
+		A10005 /* SigilData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10005; };
+		A10006 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10006; };
+		A10007 /* MethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10007; };
+		A10008 /* PlanetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10008; };
+		A10009 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10009; };
+		A10010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10010; };
+		A10014 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = V10001; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B10001 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigilCraftApp.swift; sourceTree = "<group>"; };
+		B10002 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B10003 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcaneTheme.swift; sourceTree = "<group>"; };
+		B10004 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigilModels.swift; sourceTree = "<group>"; };
+		B10005 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigilData.swift; sourceTree = "<group>"; };
+		B10006 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		B10007 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodView.swift; sourceTree = "<group>"; };
+		B10008 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsView.swift; sourceTree = "<group>"; };
+		B10009 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		B10010 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B10011 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B10012 = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B10013 = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B10099 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SigilCraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C10001 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D10001 = {isa = PBXGroup; children = (D10002, D10009); sourceTree = "<group>"; };
+		D10002 = {isa = PBXGroup; children = (B10001, B10002, D10003, D10004, D10005, D10006, B10010, B10011, V10001); path = SigilCraft; sourceTree = "<group>"; };
+		D10003 = {isa = PBXGroup; children = (B10004); path = Models; sourceTree = "<group>"; };
+		D10004 = {isa = PBXGroup; children = (B10005); path = Data; sourceTree = "<group>"; };
+		D10005 = {isa = PBXGroup; children = (B10006, B10007, B10008, B10009); path = Views; sourceTree = "<group>"; };
+		D10006 = {isa = PBXGroup; children = (B10003); path = Theme; sourceTree = "<group>"; };
+		D10009 = {isa = PBXGroup; children = (B10099); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E10001 = {isa = PBXNativeTarget; buildConfigurationList = F10003; buildPhases = (E10002, C10001, E10003); buildRules = (); dependencies = (); name = SigilCraft; productName = SigilCraft; productReference = B10099; productType = "com.apple.product-type.application"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E10099 = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1540; LastUpgradeCheck = 1540; TargetAttributes = {E10001 = {CreatedOnToolsVersion = 15.4; }; }; }; buildConfigurationList = F10001; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base, ja); mainGroup = D10001; productRefGroup = D10009; projectDirPath = ""; projectRoot = ""; targets = (E10001); };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E10003 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A10010, A10014); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E10002 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10001, A10002, A10003, A10004, A10005, A10006, A10007, A10008, A10009); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		V10001 /* InfoPlist.strings */ = {isa = PBXVariantGroup; children = (B10012, B10013); name = InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F10D01 = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES; CLANG_ANALYZER_NONNULL = YES; CLANG_CXX_LANGUAGE_STANDARD = "gnu++20"; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_STRICT_OBJC_MSGSEND = YES; ENABLE_TESTABILITY = YES; GCC_C_LANGUAGE_STANDARD = gnu17; GCC_DYNAMIC_NO_PIC = NO; GCC_NO_COMMON_BLOCKS = YES; GCC_OPTIMIZATION_LEVEL = 0; GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)"); GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR; GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE; MTL_FAST_MATH = YES; ONLY_ACTIVE_ARCH = YES; SDKROOT = iphoneos; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)"; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; }; name = Debug; };
+		F10R01 = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES; CLANG_ANALYZER_NONNULL = YES; CLANG_CXX_LANGUAGE_STANDARD = "gnu++20"; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_NS_ASSERTIONS = NO; ENABLE_STRICT_OBJC_MSGSEND = YES; GCC_C_LANGUAGE_STANDARD = gnu17; GCC_NO_COMMON_BLOCKS = YES; GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR; GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MTL_ENABLE_DEBUG_INFO = NO; MTL_FAST_MATH = YES; SDKROOT = iphoneos; SWIFT_COMPILATION_MODE = wholemodule; VALIDATE_PRODUCT = YES; }; name = Release; };
+		F10D02 = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_FILE = SigilCraft/Info.plist; INFOPLIST_KEY_CFBundleDisplayName = "Sigil Craft"; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks"); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.tokyonasu.SigilCraft; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		F10R02 = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_FILE = SigilCraft/Info.plist; INFOPLIST_KEY_CFBundleDisplayName = "Sigil Craft"; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks"); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.tokyonasu.SigilCraft; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F10001 = {isa = XCConfigurationList; buildConfigurations = (F10D01, F10R01); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		F10003 = {isa = XCConfigurationList; buildConfigurations = (F10D02, F10R02); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+
+	};
+	rootObject = E10099;
+}
